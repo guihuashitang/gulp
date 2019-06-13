@@ -25,7 +25,7 @@ var options = minimist(process.argv.slice(2), {
 });
 
 console.log(process.argv.slice(2))
-console.log(config[options.env])
+console.log(options,process.env.NODE_ENV)
 
 
 // gulp.task('revHtml',["revCss"], function(){ //Gulp3

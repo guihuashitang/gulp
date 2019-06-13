@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node gulpfile.js revHtml --env dev",
-    "dev-gulp": "node_modules/.bin/gulp default --env dev"
+    "dev-gulp": "node_modules/.bin/gulp default --env dev",
+    "gulp": "node_modules/.bin/gulp --env dev"
   },
   "author": "",
   "license": "ISC",
