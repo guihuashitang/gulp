@@ -7,17 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node gulpfile.js revHtml --env dev",
     "dev-gulp": "node_modules/.bin/gulp default --env dev",
-    "gulp": "node_modules/.bin/gulp --env dev"
+    "pro-gulp": "node_modules/.bin/gulp default --env pro"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
+    "gulp-concat": "^2.6.1",
     "gulp-rev": "^9.0.0",
     "gulp-rev-collector": "^1.3.1",
+    "gulp-util": "^3.0.8",
     "minimist": "^1.2.0"
   }
 }

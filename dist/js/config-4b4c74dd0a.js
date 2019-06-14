@@ -1,0 +1,1 @@
+urlConfig = {"title":"dev","url":"www.dev.com"}
