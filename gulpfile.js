@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass'); //css预处理器sass
 var minimist = require('minimist');
 var rev = require('gulp-rev'); //为静态文件随机添加一串hash值, 解决cdn缓存问题, a.css --> a-d2f3f35d3.css')
+//使用gulp为js和css静态文件添加版本号，升级服务器代码后，可以不用强制更新浏览器或清空缓存，优化用户体验。
 var revCollector = require('gulp-rev-collector'); //根据rev生成的manifest.json文件中的映射, 去替换文件名称, 也可以替换路径
 var gutil = require('gulp-util');
 var concat = require('gulp-concat');
@@ -40,7 +41,6 @@ console.log(options,process.env.NODE_ENV)
 // });
 
 gulp.task('clean', function() {
-  // You can use multiple globbing patterns as you would with `gulp.src`
   return del(['./dist']);
 });
 
